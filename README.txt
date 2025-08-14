@@ -25,7 +25,7 @@ O script utiliza as bibliotecas padrão do Python `os` e `shutil`. A lógica pri
 
 1.  Clone ou baixe este repositório:
     ```bash
-    git clone https:.git
+    git clone https:https://github.com/gabrielvieira-dev0/Organizador-de-arquivos-Python.git
     ```
 2.  Navegue até a pasta do projeto:
     ```bash
