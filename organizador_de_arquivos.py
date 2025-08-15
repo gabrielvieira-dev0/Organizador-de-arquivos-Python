@@ -25,10 +25,9 @@ def organizar_arquivos_por_extensao(caminho_da_pasta):
         # Ignora se for uma pasta
         if os.path.isdir(caminho_completo_arquivo):
             continue
-
         # Obtém a extensão do arquivo (ex: '.txt', '.jpg')
         _, extensao = os.path.splitext(arquivo)
-        extensao = extensao[1:].lower() # Remove o ponto e converte para minúsculas
+        extensao = extensao[1:].lower() 
 
         # Se não tiver extensão, podemos colocar em uma pasta "outros"
         if not extensao:
@@ -48,12 +47,10 @@ def organizar_arquivos_por_extensao(caminho_da_pasta):
             shutil.move(caminho_completo_arquivo, pasta_destino)
         except Exception as e:
             print(f"Erro ao mover o arquivo {arquivo}: {e}")
-
     print("\nOrganização concluída!")
 
 # Executa a função principal
 if __name__ == "__main__":
-    # Obs: Altere este caminho para a pasta que você deseja organizar.
-    # Por exemplo: "C:\Users\SeuUsuario\Downloads"
+    # Obs: Altere este caminho para a pasta que você deseja organizar, por exemplo: "C:\Users\SeuUsuario\Downloads"
     pasta_para_organizar = input("Digite o caminho completo da pasta que deseja organizar: ")
     organizar_arquivos_por_extensao(pasta_para_organizar)
